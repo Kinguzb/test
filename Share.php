@@ -47,7 +47,7 @@ if ($chdoc or $chphoto or $chaudio or $chvideo or $chsticker or $chanimation){
 bot('editMessageCaption',[
  'chat_id'=>$chid,
 'message_id'=>$chmid,
-'caption'=>"$chcaption\n\n⬇Bizga qo'shiling⬇\n📡 @$chuser\n🆔 $chmid",
+'caption'=>"$chcaption\n\n⬇Bizga qo'shiling⬇\n📡 @$chuser\nBu kanaldagi $chmid xabar",
 'reply_markup'=>json_encode([
 'inline_keyboard'=>[
 [['text'=>"♻ Do'stlarga ulashish", "url"=>"https://t.me/share/url?url=https://telegram.me/$chuser/$chmid"]],
@@ -60,7 +60,7 @@ if ($chtext){
 bot('editmessagetext',[
  'chat_id'=>$chid,
 'message_id'=>$chmid,
-'text'=>"$chtext\n\n⬇Bizga qo'shiling⬇\n📡 @$chuser\n🆔 $chmid",
+'text'=>"$chtext\n\n⬇Bizga qo'shiling⬇\n📡 @$chuser\nBu kanaldagi $chmid xabar",
 'reply_markup'=>json_encode([
 'inline_keyboard'=>[
 [['text'=>"♻ Do'stlarga ulashish", "url"=>"https://t.me/share/url?url=https://telegram.me/$chuser/$chmid"]],
